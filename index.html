@@ -1,31 +1,461 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="#ed3b44">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/trade-blade-proj/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS is Awesome (Homework 12)</title>
-    <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-B6ZtZCud.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-CWKLx11g.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-CxQn9NKx.css">
+    <title>TradeBlade</title>
+    <script type="module" crossorigin src="/trade-blade-proj/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/trade-blade-proj/assets/vendor-8YQue-bp.js">
+    <link rel="stylesheet" crossorigin href="/trade-blade-proj/assets/vendor-C8ec8cn4.css">
+    <link rel="stylesheet" crossorigin href="/trade-blade-proj/assets/index-C5qmk65F.css">
   </head>
   <body>
+    <header class="header">
+  <div class="container header-container">
+    <a class="nav-logo" href="./index.html">
+      <picture>
+        <source
+          srcset="/trade-blade-proj/assets/logo-mob-CdljewSb.png 1x, /trade-blade-proj/assets/logo-mob2x-B4p7rT40.png 2x"
+          media="(max-width: 1439px)"
+        />
+        <source
+          srcset="/trade-blade-proj/assets/logo-desc-DPSEN85U.png 1x, /trade-blade-proj/assets/logo-desc2x-CF4VK4tG.png 2x"
+          media="(min-width: 1440px)"
+        />
+        <img src="/img/logo-m.png" alt="TradeBlade logo" />
+      </picture>
+    </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#numbers">Цифры</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#online">Сделки онлайн</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">O компании</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#prices">Тарифы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="login-list">
+      <li class="login-item">
+        <a class="login-link" href="">Вход</a>
+      </li>
+      <li class="login-item">
+        <a class="login-link accent" href="">Регистрация</a>
+      </li>
+    </ul>
+    <button class="burger-btn" type="button">
+      <svg class="burger-icon" width="24" height="16">
+        <use href="/trade-blade-proj/assets/sprite-BGKH6dyg.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <button class="mobile-close-btn" type="button">
+      <svg class="mobile-close-icon" width="32" height="32">
+        <use href="/trade-blade-proj/assets/sprite-BGKH6dyg.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#numbers">Цифры</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#online">Сделки онлайн</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#about">O компании</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#prices">Тарифы</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+      <ul class="mobile-login-list">
+        <li class="mobile-login-item">
+          <a class="mobile-login-link accent" href="">Регистрация</a>
+        </li>
+        <li class="mobile-login-item">
+          <a class="mobile-login-link" href="">Вход</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-    <h1>Welcome to the world of beautiful pictures</h1>
 
-    <form>
-      <input type="text"  
-        name="search-text"
-        id="search-text"
-        placeholder="Search images...">
-      <button type="submit" class="find-mi">Search</button>
-    </form>
+    <main>
+      <section class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-img">
+      <picture>
+        <source
+          srcset="data:image/png;base64,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 1x, /trade-blade-proj/assets/hero-img-mob2x-Cgp8XtSU.png 2x"
+          media="(max-width: 1439px)"
+        />
+        <source
+          srcset="/trade-blade-proj/assets/hero-img-desc-0sy29ypZ.png 1x, /trade-blade-proj/assets/hero-img-desc2x-8RahKSk9.png 2x"
+          media="(min-width: 1440px)"
+        />
+        <img src="data:image/png;base64,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" alt="Hero image" />
+      </picture>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Моментально<br />копируй сделки<br />профи трейдеров
+      </h1>
+      <p class="hero-text">
+        Начни копировать сделки с успешной командой профессиональных<br />трейдеров
+        в автоматическом режиме.
+      </p>
+      <form class="hero-form">
+        <input
+          class="hero-input"
+          name="email"
+          type="email"
+          placeholder="Ваш e-mail"
+        />
+        <button class="hero-btn" type="submit">Начать</button>
+      </form>
+      <p class="hero-phrase">5 дней бесплатного пользования</p>
+    </div>
+  </div>
+</section>
 
-    <ul class="gallery"></ul>
+      <section class="numbers-section" id="numbers">
+  <div class="container numbers-container">
+    <div class="numbers-decor"></div>
+    <div class="numbers-div">
+      <h2 class="numbers-title">Цифры</h2>
+      <p class="numbers-text">Cентябрь 2022</p>
+    </div>
+    <ul class="numbers-list">
+      <li class="numbers-item">
+        <p class="numbers-list-title">Торговой</p>
+        <p class="numbers-list-title">прибыли</p>
+        <p class="numbers-list-text">2756%</p>
+      </li>
+      <li class="numbers-item">
+        <p class="numbers-list-title">Фьючерсных</p>
+        <p class="numbers-list-title">и спотовых сделок</p>
+        <p class="numbers-list-text">67</p>
+      </li>
+      <li class="numbers-item">
+        <p class="numbers-list-title">Прибыль подписчиков</p>
+        <p class="numbers-list-text">375000</p>
+      </li>
+    </ul>
+  </div>
+</section>
 
-    <button type="click" class="load-more hidden">Load more</button>
-    <p class="loader-container hidden"><span class="loader"></span></p>
+      <section class="online-section" id="online">
+  <div class="container">
+    <h2 class="online-title">Прошедшие сделки</h2>
+    <p class="online-text"><span class="online-span"></span>Онлайн</p>
+    <div class="swiper online-swiper">
+      <ul class="swiper-wrapper online-list">
+        <li class="swiper-slide online-card">
+          <img class="online-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG8AAAChCAMAAAD++RGWAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAABRUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAEdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAspzaQAAAAbdFJOUyYTHA4KBAIACSEFJBUXEAcaIxgMEh8dEQseDerLrMoAAAR/SURBVHja7ZvReqIwEEYDKZAIihVtt/v+D7pKsUIyk8yQSb69aC63XY44cyZ/xKqu7FK/vF/e/8wbC/PMtfD7WR/borxR2aZovwzK/inJa3ulriV9OCmlhragf7c7sFARZ55RD6ApN1/qB7BIEb95h34GFijiMj+rmVegiAuv7RegKcPrtFrWtQxvaZlHEcvwzJOXt4iv/fbyAo4leM+WyVvEVZ6oXrx8RVzxWrsC5iriOi8ZtQaO2XkvJ+Z1ys4bN7wsRdzmz2EL/Goy89ZO5Cmik69Pyll/5/fZiC03z98c3nvrmJm6HJ5xfz43jc3Gc5y4LwO9CjnewWkZVYOvQoznF+sRvg/5eK1bLCvaMr4i2v2VCjBTkOcV672BzJTjed14FGwZaOhcMjoB8VrQiXM2nt+NGjJTjuc5ITdG4W3DgE7YbDzYicNb8sJ43gCrM3+eNUBOZOR5TnylonR1X/jndd4AS8yHOtgvWLTYkWaWy9kYD44W7Mldbf9X4B3wJnSD/Hto2aXfbZwHRwvm5NbOFhAqcYU4wZjcN1fnEM+PFsiN48srAaWHveKTJ/fRu05Ymhp2gjq5n6dWS+VhTkwsF66KykPHaM1xoafz2hQnNBCHYmMPjNvQjfvrDG1t0TkLxm1SAG6gC0R5Zq8TR9Cp+EYCRov4oXBxwVUnzjsgdTGkZrkqLm+fExZ5sQQe5kTwUDghRwNKFMCixRBtFqP28NAx2vNcuL/LNJ6JhARscHr7iyY+Tz0jTtyQZmm3IeK1+xJ5zGihkfo25OfFFccJzIUj/fk0K1o0sAuPiUN+Hj4hTlTUwfndRPTn73QnMBc6Fg+LFprqiubx/G4bwRt3A/V2yjN4xGihkcHZcHmoE5tLf+AucHlYtNg4gZxpnkmUxSNEC8wF3e3gxeO2DbnA52FVmZwhcMVuj/t9m8gYteGXxedFnAi7sIOHTI1lGByR2xu63Ty/0VdjFGuWJoEXcGKIuLCLh0YLiwTqlwv7eN4O+4zbSKBWb2k81ImoCzt53htWBz9rb1J5aLQAf1Z1yTxsjAa2kDSeQW8i6MJuHhRk4RBhOxEeNkYvSMRJ5SFORFxI4Hl9MYCfGzZiPANcWUdcSOE5TgzBECHBO3g7zjXmQhJv0zIaPlyK8lZOWMLgTOatosVIcyGR99MyR+gkj3whKYVnmC6k8ha/K6oLybw5WtiO6kIyb3ZCQ83y0WXh3aMFw4V03j0+PK480lwQ4HU6FqiFeWCIOHU5eQeqC0I8sgtCPHqziPBGsgsyvIlzewK8iuyCDO9MbxYRXk12QYbXQ4858vFaRrNI8AzdBRHeJyFESPIG3pe2lWR76i4/70Z3QYQXOlxm4I0MFyR4E8MFCV7FcEGCd+Y0iwCvZrggwet5t5fKa1nNks4zHBcEeMu07ptCvIHjggCvZjVLOu/GcUGAFz5civNGlgvpvInlgsz5nfeXX2m8M/trtipVB9sV5PUsF5J57c/DozI8w3MhmffJcyGZN/D/CjKJV+uuKO/cleVNhXk71j9wL3DLyPDWvwAAAABJRU5ErkJggg==" />
+          <h3 class="online-card-title">NEAR/USDT</h3>
+          <p class="online-card-spot">
+            SPOT &#8901; <span class="online-card-spot-span">1 мин. назад</span>
+          </p>
+          <p class="online-card-income">Прибыль</p>
+          <p class="online-card-percent">
+            58.6206% <span class="online-card-percent-span">&#8593;</span>
+          </p>
+          <div class="online-card-goal-wrp">
+            <p class="online-card-goal">Цель 4</p>
+            <p class="online-card-date">Дата входа 06.10.2022</p>
+          </div>
+        </li>
+        <li class="swiper-slide online-card">
+          <img class="online-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG8AAAChCAMAAAD++RGWAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAABRUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAEdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAspzaQAAAAbdFJOUyYTHA4KBAIACSEFJBUXEAcaIxgMEh8dEQseDerLrMoAAAR/SURBVHja7ZvReqIwEEYDKZAIihVtt/v+D7pKsUIyk8yQSb69aC63XY44cyZ/xKqu7FK/vF/e/8wbC/PMtfD7WR/borxR2aZovwzK/inJa3ulriV9OCmlhragf7c7sFARZ55RD6ApN1/qB7BIEb95h34GFijiMj+rmVegiAuv7RegKcPrtFrWtQxvaZlHEcvwzJOXt4iv/fbyAo4leM+WyVvEVZ6oXrx8RVzxWrsC5iriOi8ZtQaO2XkvJ+Z1ys4bN7wsRdzmz2EL/Goy89ZO5Cmik69Pyll/5/fZiC03z98c3nvrmJm6HJ5xfz43jc3Gc5y4LwO9CjnewWkZVYOvQoznF+sRvg/5eK1bLCvaMr4i2v2VCjBTkOcV672BzJTjed14FGwZaOhcMjoB8VrQiXM2nt+NGjJTjuc5ITdG4W3DgE7YbDzYicNb8sJ43gCrM3+eNUBOZOR5TnylonR1X/jndd4AS8yHOtgvWLTYkWaWy9kYD44W7Mldbf9X4B3wJnSD/Hto2aXfbZwHRwvm5NbOFhAqcYU4wZjcN1fnEM+PFsiN48srAaWHveKTJ/fRu05Ymhp2gjq5n6dWS+VhTkwsF66KykPHaM1xoafz2hQnNBCHYmMPjNvQjfvrDG1t0TkLxm1SAG6gC0R5Zq8TR9Cp+EYCRov4oXBxwVUnzjsgdTGkZrkqLm+fExZ5sQQe5kTwUDghRwNKFMCixRBtFqP28NAx2vNcuL/LNJ6JhARscHr7iyY+Tz0jTtyQZmm3IeK1+xJ5zGihkfo25OfFFccJzIUj/fk0K1o0sAuPiUN+Hj4hTlTUwfndRPTn73QnMBc6Fg+LFprqiubx/G4bwRt3A/V2yjN4xGihkcHZcHmoE5tLf+AucHlYtNg4gZxpnkmUxSNEC8wF3e3gxeO2DbnA52FVmZwhcMVuj/t9m8gYteGXxedFnAi7sIOHTI1lGByR2xu63Ty/0VdjFGuWJoEXcGKIuLCLh0YLiwTqlwv7eN4O+4zbSKBWb2k81ImoCzt53htWBz9rb1J5aLQAf1Z1yTxsjAa2kDSeQW8i6MJuHhRk4RBhOxEeNkYvSMRJ5SFORFxI4Hl9MYCfGzZiPANcWUdcSOE5TgzBECHBO3g7zjXmQhJv0zIaPlyK8lZOWMLgTOatosVIcyGR99MyR+gkj3whKYVnmC6k8ha/K6oLybw5WtiO6kIyb3ZCQ83y0WXh3aMFw4V03j0+PK480lwQ4HU6FqiFeWCIOHU5eQeqC0I8sgtCPHqziPBGsgsyvIlzewK8iuyCDO9MbxYRXk12QYbXQ4858vFaRrNI8AzdBRHeJyFESPIG3pe2lWR76i4/70Z3QYQXOlxm4I0MFyR4E8MFCV7FcEGCd+Y0iwCvZrggwet5t5fKa1nNks4zHBcEeMu07ptCvIHjggCvZjVLOu/GcUGAFz5civNGlgvpvInlgsz5nfeXX2m8M/trtipVB9sV5PUsF5J57c/DozI8w3MhmffJcyGZN/D/CjKJV+uuKO/cleVNhXk71j9wL3DLyPDWvwAAAABJRU5ErkJggg==" />
+          <h3 class="online-card-title">BTC/USDT</h3>
+          <p class="online-card-spot">
+            SPOT &#8901; <span class="online-card-spot-span">1 мин. назад</span>
+          </p>
+          <p class="online-card-income">Прибыль</p>
+          <p class="online-card-percent">6.02% &#8593;</p>
+          <div class="online-card-goal-wrp">
+            <p class="online-card-goal">Цель 3</p>
+            <p class="online-card-date">Дата входа 06.10.2022</p>
+          </div>
+        </li>
+        <li class="swiper-slide online-card">
+          <img class="online-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG8AAAChCAMAAAD++RGWAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAABRUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAEdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAspzaQAAAAbdFJOUyYTHA4KBAIACSEFJBUXEAcaIxgMEh8dEQseDerLrMoAAAR/SURBVHja7ZvReqIwEEYDKZAIihVtt/v+D7pKsUIyk8yQSb69aC63XY44cyZ/xKqu7FK/vF/e/8wbC/PMtfD7WR/borxR2aZovwzK/inJa3ulriV9OCmlhragf7c7sFARZ55RD6ApN1/qB7BIEb95h34GFijiMj+rmVegiAuv7RegKcPrtFrWtQxvaZlHEcvwzJOXt4iv/fbyAo4leM+WyVvEVZ6oXrx8RVzxWrsC5iriOi8ZtQaO2XkvJ+Z1ys4bN7wsRdzmz2EL/Goy89ZO5Cmik69Pyll/5/fZiC03z98c3nvrmJm6HJ5xfz43jc3Gc5y4LwO9CjnewWkZVYOvQoznF+sRvg/5eK1bLCvaMr4i2v2VCjBTkOcV672BzJTjed14FGwZaOhcMjoB8VrQiXM2nt+NGjJTjuc5ITdG4W3DgE7YbDzYicNb8sJ43gCrM3+eNUBOZOR5TnylonR1X/jndd4AS8yHOtgvWLTYkWaWy9kYD44W7Mldbf9X4B3wJnSD/Hto2aXfbZwHRwvm5NbOFhAqcYU4wZjcN1fnEM+PFsiN48srAaWHveKTJ/fRu05Ymhp2gjq5n6dWS+VhTkwsF66KykPHaM1xoafz2hQnNBCHYmMPjNvQjfvrDG1t0TkLxm1SAG6gC0R5Zq8TR9Cp+EYCRov4oXBxwVUnzjsgdTGkZrkqLm+fExZ5sQQe5kTwUDghRwNKFMCixRBtFqP28NAx2vNcuL/LNJ6JhARscHr7iyY+Tz0jTtyQZmm3IeK1+xJ5zGihkfo25OfFFccJzIUj/fk0K1o0sAuPiUN+Hj4hTlTUwfndRPTn73QnMBc6Fg+LFprqiubx/G4bwRt3A/V2yjN4xGihkcHZcHmoE5tLf+AucHlYtNg4gZxpnkmUxSNEC8wF3e3gxeO2DbnA52FVmZwhcMVuj/t9m8gYteGXxedFnAi7sIOHTI1lGByR2xu63Ty/0VdjFGuWJoEXcGKIuLCLh0YLiwTqlwv7eN4O+4zbSKBWb2k81ImoCzt53htWBz9rb1J5aLQAf1Z1yTxsjAa2kDSeQW8i6MJuHhRk4RBhOxEeNkYvSMRJ5SFORFxI4Hl9MYCfGzZiPANcWUdcSOE5TgzBECHBO3g7zjXmQhJv0zIaPlyK8lZOWMLgTOatosVIcyGR99MyR+gkj3whKYVnmC6k8ha/K6oLybw5WtiO6kIyb3ZCQ83y0WXh3aMFw4V03j0+PK480lwQ4HU6FqiFeWCIOHU5eQeqC0I8sgtCPHqziPBGsgsyvIlzewK8iuyCDO9MbxYRXk12QYbXQ4858vFaRrNI8AzdBRHeJyFESPIG3pe2lWR76i4/70Z3QYQXOlxm4I0MFyR4E8MFCV7FcEGCd+Y0iwCvZrggwet5t5fKa1nNks4zHBcEeMu07ptCvIHjggCvZjVLOu/GcUGAFz5civNGlgvpvInlgsz5nfeXX2m8M/trtipVB9sV5PUsF5J57c/DozI8w3MhmffJcyGZN/D/CjKJV+uuKO/cleVNhXk71j9wL3DLyPDWvwAAAABJRU5ErkJggg==" />
+          <h3 class="online-card-title">ETH/USDT</h3>
+          <p class="online-card-spot">
+            SPOT &#8901; <span class="online-card-spot-span">1 мин. назад</span>
+          </p>
+          <p class="online-card-income">Прибыль</p>
+          <p class="online-card-percent">16.3% &#8593;</p>
+          <div class="online-card-goal-wrp">
+            <p class="online-card-goal">Цель 4</p>
+            <p class="online-card-date">Дата входа 06.10.2022</p>
+          </div>
+        </li>
+        <li class="swiper-slide online-card">
+          <img class="online-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG8AAAChCAMAAAD++RGWAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAABRUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAEdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAspzaQAAAAbdFJOUyYTHA4KBAIACSEFJBUXEAcaIxgMEh8dEQseDerLrMoAAAR/SURBVHja7ZvReqIwEEYDKZAIihVtt/v+D7pKsUIyk8yQSb69aC63XY44cyZ/xKqu7FK/vF/e/8wbC/PMtfD7WR/borxR2aZovwzK/inJa3ulriV9OCmlhragf7c7sFARZ55RD6ApN1/qB7BIEb95h34GFijiMj+rmVegiAuv7RegKcPrtFrWtQxvaZlHEcvwzJOXt4iv/fbyAo4leM+WyVvEVZ6oXrx8RVzxWrsC5iriOi8ZtQaO2XkvJ+Z1ys4bN7wsRdzmz2EL/Goy89ZO5Cmik69Pyll/5/fZiC03z98c3nvrmJm6HJ5xfz43jc3Gc5y4LwO9CjnewWkZVYOvQoznF+sRvg/5eK1bLCvaMr4i2v2VCjBTkOcV672BzJTjed14FGwZaOhcMjoB8VrQiXM2nt+NGjJTjuc5ITdG4W3DgE7YbDzYicNb8sJ43gCrM3+eNUBOZOR5TnylonR1X/jndd4AS8yHOtgvWLTYkWaWy9kYD44W7Mldbf9X4B3wJnSD/Hto2aXfbZwHRwvm5NbOFhAqcYU4wZjcN1fnEM+PFsiN48srAaWHveKTJ/fRu05Ymhp2gjq5n6dWS+VhTkwsF66KykPHaM1xoafz2hQnNBCHYmMPjNvQjfvrDG1t0TkLxm1SAG6gC0R5Zq8TR9Cp+EYCRov4oXBxwVUnzjsgdTGkZrkqLm+fExZ5sQQe5kTwUDghRwNKFMCixRBtFqP28NAx2vNcuL/LNJ6JhARscHr7iyY+Tz0jTtyQZmm3IeK1+xJ5zGihkfo25OfFFccJzIUj/fk0K1o0sAuPiUN+Hj4hTlTUwfndRPTn73QnMBc6Fg+LFprqiubx/G4bwRt3A/V2yjN4xGihkcHZcHmoE5tLf+AucHlYtNg4gZxpnkmUxSNEC8wF3e3gxeO2DbnA52FVmZwhcMVuj/t9m8gYteGXxedFnAi7sIOHTI1lGByR2xu63Ty/0VdjFGuWJoEXcGKIuLCLh0YLiwTqlwv7eN4O+4zbSKBWb2k81ImoCzt53htWBz9rb1J5aLQAf1Z1yTxsjAa2kDSeQW8i6MJuHhRk4RBhOxEeNkYvSMRJ5SFORFxI4Hl9MYCfGzZiPANcWUdcSOE5TgzBECHBO3g7zjXmQhJv0zIaPlyK8lZOWMLgTOatosVIcyGR99MyR+gkj3whKYVnmC6k8ha/K6oLybw5WtiO6kIyb3ZCQ83y0WXh3aMFw4V03j0+PK480lwQ4HU6FqiFeWCIOHU5eQeqC0I8sgtCPHqziPBGsgsyvIlzewK8iuyCDO9MbxYRXk12QYbXQ4858vFaRrNI8AzdBRHeJyFESPIG3pe2lWR76i4/70Z3QYQXOlxm4I0MFyR4E8MFCV7FcEGCd+Y0iwCvZrggwet5t5fKa1nNks4zHBcEeMu07ptCvIHjggCvZjVLOu/GcUGAFz5civNGlgvpvInlgsz5nfeXX2m8M/trtipVB9sV5PUsF5J57c/DozI8w3MhmffJcyGZN/D/CjKJV+uuKO/cleVNhXk71j9wL3DLyPDWvwAAAABJRU5ErkJggg==" />
+          <h3 class="online-card-title">NEAR/USDT</h3>
+          <p class="online-card-spot">
+            SPOT &#8901; <span class="online-card-spot-span">1 мин. назад</span>
+          </p>
+          <p class="online-card-income">Прибыль</p>
+          <p class="online-card-percent">0.963% &#8593;</p>
+          <div class="online-card-goal-wrp">
+            <p class="online-card-goal">Цель 4</p>
+            <p class="online-card-date">Дата входа 06.10.2022</p>
+          </div>
+        </li>
+        <li class="swiper-slide online-card">
+          <img class="online-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG8AAAChCAMAAAD++RGWAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAABRUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAEdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAspzaQAAAAbdFJOUyYTHA4KBAIACSEFJBUXEAcaIxgMEh8dEQseDerLrMoAAAR/SURBVHja7ZvReqIwEEYDKZAIihVtt/v+D7pKsUIyk8yQSb69aC63XY44cyZ/xKqu7FK/vF/e/8wbC/PMtfD7WR/borxR2aZovwzK/inJa3ulriV9OCmlhragf7c7sFARZ55RD6ApN1/qB7BIEb95h34GFijiMj+rmVegiAuv7RegKcPrtFrWtQxvaZlHEcvwzJOXt4iv/fbyAo4leM+WyVvEVZ6oXrx8RVzxWrsC5iriOi8ZtQaO2XkvJ+Z1ys4bN7wsRdzmz2EL/Goy89ZO5Cmik69Pyll/5/fZiC03z98c3nvrmJm6HJ5xfz43jc3Gc5y4LwO9CjnewWkZVYOvQoznF+sRvg/5eK1bLCvaMr4i2v2VCjBTkOcV672BzJTjed14FGwZaOhcMjoB8VrQiXM2nt+NGjJTjuc5ITdG4W3DgE7YbDzYicNb8sJ43gCrM3+eNUBOZOR5TnylonR1X/jndd4AS8yHOtgvWLTYkWaWy9kYD44W7Mldbf9X4B3wJnSD/Hto2aXfbZwHRwvm5NbOFhAqcYU4wZjcN1fnEM+PFsiN48srAaWHveKTJ/fRu05Ymhp2gjq5n6dWS+VhTkwsF66KykPHaM1xoafz2hQnNBCHYmMPjNvQjfvrDG1t0TkLxm1SAG6gC0R5Zq8TR9Cp+EYCRov4oXBxwVUnzjsgdTGkZrkqLm+fExZ5sQQe5kTwUDghRwNKFMCixRBtFqP28NAx2vNcuL/LNJ6JhARscHr7iyY+Tz0jTtyQZmm3IeK1+xJ5zGihkfo25OfFFccJzIUj/fk0K1o0sAuPiUN+Hj4hTlTUwfndRPTn73QnMBc6Fg+LFprqiubx/G4bwRt3A/V2yjN4xGihkcHZcHmoE5tLf+AucHlYtNg4gZxpnkmUxSNEC8wF3e3gxeO2DbnA52FVmZwhcMVuj/t9m8gYteGXxedFnAi7sIOHTI1lGByR2xu63Ty/0VdjFGuWJoEXcGKIuLCLh0YLiwTqlwv7eN4O+4zbSKBWb2k81ImoCzt53htWBz9rb1J5aLQAf1Z1yTxsjAa2kDSeQW8i6MJuHhRk4RBhOxEeNkYvSMRJ5SFORFxI4Hl9MYCfGzZiPANcWUdcSOE5TgzBECHBO3g7zjXmQhJv0zIaPlyK8lZOWMLgTOatosVIcyGR99MyR+gkj3whKYVnmC6k8ha/K6oLybw5WtiO6kIyb3ZCQ83y0WXh3aMFw4V03j0+PK480lwQ4HU6FqiFeWCIOHU5eQeqC0I8sgtCPHqziPBGsgsyvIlzewK8iuyCDO9MbxYRXk12QYbXQ4858vFaRrNI8AzdBRHeJyFESPIG3pe2lWR76i4/70Z3QYQXOlxm4I0MFyR4E8MFCV7FcEGCd+Y0iwCvZrggwet5t5fKa1nNks4zHBcEeMu07ptCvIHjggCvZjVLOu/GcUGAFz5civNGlgvpvInlgsz5nfeXX2m8M/trtipVB9sV5PUsF5J57c/DozI8w3MhmffJcyGZN/D/CjKJV+uuKO/cleVNhXk71j9wL3DLyPDWvwAAAABJRU5ErkJggg==" />
+          <h3 class="online-card-title">NEAR/USDT</h3>
+          <p class="online-card-spot">
+            SPOT &#8901; <span class="online-card-spot-span">1 мин. назад</span>
+          </p>
+          <p class="online-card-income">Прибыль</p>
+          <p class="online-card-percent">58.6206% &#8593;</p>
+          <div class="online-card-goal-wrp">
+            <p class="online-card-goal">Цель 4</p>
+            <p class="online-card-date">Дата входа 06.10.2022</p>
+          </div>
+        </li>
+      </ul>
+      <div class="swiper-scrollbar">
+        <div class="swiper-scrollbar-drag"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="about-section" id="about">
+  <div class="container about-container">
+    <div class="about-content">
+      <h2 class="about-title">O компании</h2>
+      <p class="about-text">
+        Мы опытная команда, для которой трейдинг - профессия. TradeBlade
+        является авторизованным официальным брокером биржи Binance.
+      </p>
+      <br />
+      <p class="about-text">
+        Он представляет пользователям множество преимуществ, таких как более
+        високая скорость синхронизации API и возможность создать учетную запись
+        Binance через платформу TradeBlade всего в 1 клик.
+      </p>
+    </div>
+    <div class="about-form-wrp">
+      <p class="about-desc">
+        Попробуйте сейчас и получите <br />5 дней бесплатного пользования
+      </p>
+      <form class="about-form-try">
+        <input
+          class="about-input"
+          name="email"
+          type="email"
+          placeholder="Ваш e-mail"
+        />
+        <button class="about-btn" type="submit">Попробовать</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+      <section class="prices-section" id="prices">
+  <div class="container prices-container">
+    <h2 class="prices-title">Тарифы</h2>
+    <ul class="prices-list">
+      <li class="prices-item spot-item">
+        <a class="prices-link spot-link">Спот</a>
+      </li>
+      <li class="prices-item futures-item">
+        <a class="prices-link futures-link">Фьючерс</a>
+      </li>
+    </ul>
+    <div class="prices-cards-wrp">
+      <div class="prices-card prices-card-left">
+        <div class="prices-card-upper">
+          <h3 class="prices-card-title">Standard</h3>
+          <ul class="prices-card-list prices-card-list-left">
+            <li class="prices-card-item">Ручной трейдинг</li>
+            <li class="prices-card-item">
+              Автоматическое или полуавтоматическое копирование сделок
+            </li>
+            <li class="prices-card-item">Личный кабинет со статистикой</li>
+            <li class="prices-card-item">
+              Среднесрочные сделки с<br />уровнями набора портфеля
+            </li>
+          </ul>
+        </div>
+        <div class="prices-card-lower">
+          <div class="prices-card-div">
+            <p class="prices-card-text">
+              $234<span class="prices-card-percent">-35%</span>
+            </p>
+            <select class="prices-card-select" name="months">
+              <option value="12">12 месяцев</option>
+              <option value="6">6 месяцев</option>
+              <option value="1">1 месяц</option>
+            </select>
+          </div>
+          <a class="prices-card-btn" href="#about">
+            Попробовать<span class="prices-card-span">5 дней бесплатно</span>
+          </a>
+        </div>
+      </div>
+      <div class="prices-card prices-card-right">
+        <div class="prices-card-upper">
+          <h3 class="prices-card-title">VIP</h3>
+          <ul class="prices-card-list prices-card-list-right">
+            <li class="prices-card-item">Ручной трейдинг</li>
+            <li class="prices-card-item">
+              Автоматическое или полуавтоматическое копирование сделок
+            </li>
+            <li class="prices-card-item">Личный кабинет со статистикой</li>
+            <li class="prices-card-item">
+              Краткосрочные, среднесрочные и инвест сделки
+            </li>
+            <li class="prices-card-item">Доступ в Vip чат с командой</li>
+            <li class="prices-card-item">Наш авторский курс по трейдингу</li>
+          </ul>
+        </div>
+        <div class="prices-card-lower">
+          <div class="prices-card-div">
+            <p class="prices-card-text">
+              $585<span class="prices-card-percent">-35%</span>
+            </p>
+            <select class="prices-card-select" name="months">
+              <option value="12">12 месяцев</option>
+              <option value="6">6 месяцев</option>
+              <option value="1">1 месяц</option>
+            </select>
+          </div>
+          <a class="prices-card-btn" href="#about">
+            Попробовать<span class="prices-card-span">5 дней бесплатно</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="faq-section" id="faq">
+  <div class="container faq-container">
+    <h2 class="faq-title">Часто задаваемые вопросы</h2>
+    <ul class="accordion-list">
+      <li class="ac accordion-item">
+        <h3 class="ac-header accordion-title">
+          Что такое TradeBlade<button class="ac-trigger accordion-btn">
+            <svg class="accordion-icon" width="14" height="8">
+              <use href="/trade-blade-proj/assets/sprite-BGKH6dyg.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="accordion-text">
+            Мы опытная команда, для которой трейдинг - профессия. TradeBlade
+            является авторизованным официальным брокером биржи Binance.
+          </p>
+          <br />
+          <p class="accordion-text">
+            Он представляет пользователям множество преимуществ, таких как более
+            високая скорость синхронизации API и возможность создать учетную
+            запись Binance через платформу TradeBlade всего в 1 клик.
+          </p>
+        </div>
+      </li>
+      <li class="ac accordion-item">
+        <h3 class="ac-header accordion-title">
+          Что TradeBlade предлагает инвесторам<button
+            class="ac-trigger accordion-btn"
+          >
+            <svg class="accordion-icon" width="14" height="8">
+              <use href="/trade-blade-proj/assets/sprite-BGKH6dyg.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="accordion-text">
+            Copy-Trading позволяет следить за сделками команды и получать
+            прибыль 24/7 без каких-либо усилий или проблем для вас.
+          </p>
+        </div>
+      </li>
+      <li class="ac accordion-item">
+        <h3 class="ac-header accordion-title">
+          Должен ли я перевести свои средства на TradeBlade<button
+            class="ac-trigger accordion-btn"
+          >
+            <svg class="accordion-icon" width="14" height="8">
+              <use href="/trade-blade-proj/assets/sprite-BGKH6dyg.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="accordion-text">
+            Начните бесплатную 5-дневную пробную версию. Кредитная карта не
+            требуется.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-left">
+      <div class="footer-desc">
+        <p class="footer-desc-item">Быстрая навигация</p>
+      </div>
+      <nav>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#numbers">Цифры</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#online">Сделки онлайн</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#about">O компании</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#prices">Тарифы</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-right">
+      <a class="footer-img" href="./index.html">
+        <img
+          srcset="/trade-blade-proj/assets/footer-img2x-BOTUpBuW.png 2x"
+          src="/trade-blade-proj/assets/footer-img-ozGbcLkq.png"
+          alt="TradeBlade logo"
+          width="165"
+        />
+      </a>
+      <p class="footer-copy">&#169; 2022 TradeBlade. All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
 
   </body>
 </html>
