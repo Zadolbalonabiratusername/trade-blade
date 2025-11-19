@@ -1,11 +1,11 @@
 {
-  "name": "trade-blade-proj",
+  "name": "trade-blade",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/trade-blade-proj/",
+    "build": "vite build --base=/trade-blade/",
     "preview": "vite preview"
   },
   "devDependencies": {
