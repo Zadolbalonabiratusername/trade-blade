@@ -1,0 +1,29 @@
+:root {
+  --font-family: 'IBM Plex Sans', sans-serif;
+  --purple: #6a54ff;
+  --skyblue: #57e1ff;
+  --white: #ffffff;
+  --black: #030718;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--black);
+}

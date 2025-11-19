@@ -1,0 +1,126 @@
+.numbers-section {
+  padding-bottom: 48px;
+  background-color: var(--white);
+}
+
+.numbers-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.numbers-div {
+  padding: 40px 0;
+}
+
+.numbers-decor {
+  position: absolute;
+  width: 646px;
+  height: 24px;
+  right: 40%;
+  top: -24px;
+  width: 1000px;
+
+  border-bottom: 24px solid rgb(255, 255, 255);
+  border-left: 0px solid transparent;
+  border-right: 24px solid transparent;
+  z-index: 2;
+}
+
+.numbers-title {
+  padding-bottom: 2px;
+
+  font-size: 28px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.numbers-text {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.04em;
+  color: #00000050;
+}
+
+.numbers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 32px;
+  padding-right: 10px;
+}
+
+.numbers-item {
+  width: calc((100% - 10px) / 2);
+}
+
+.numbers-list-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  text-transform: uppercase;
+  color: #00000080;
+}
+
+.numbers-list-text {
+  padding-top: 4px;
+
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+
+@media screen and (min-width: 1440px) {
+  .numbers-section {
+    padding-bottom: 0;
+    background-color: var(--white);
+  }
+
+  .numbers-container {
+    flex-direction: row;
+  }
+
+  .numbers-decor {
+    height: 60px;
+    right: 58%;
+    top: -60px;
+    width: 4000px;
+
+    border-bottom: 60px solid rgb(255, 255, 255);
+    border-right: 60px solid transparent;
+  }
+
+  .numbers-div {
+    padding: 96px 157px 84px 0;
+  }
+
+  .numbers-title {
+    padding-bottom: 4px;
+
+    font-size: 44px;
+    line-height: 1.27;
+  }
+
+  .numbers-list {
+    width: 100%;
+    padding: 105px 95px 61px 0;
+  }
+
+  .numbers-item {
+    width: calc(100% / 3);
+  }
+
+  .numbers-list-title {
+    display: inline;
+  }
+
+  .numbers-list-text {
+    padding-top: 8px;
+    font-size: 60px;
+  }
+}

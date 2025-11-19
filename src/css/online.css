@@ -1,0 +1,158 @@
+.online-section {
+  padding: 48px 0 75px 0;
+}
+
+.online-title {
+  font-size: 28px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.online-text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-bottom: 24px;
+
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.04em;
+  color: #35ff9e90;
+}
+
+.online-span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 100%;
+  background-color: #35ff9e;
+}
+
+.online-swiper {
+  overflow: visible !important;
+}
+
+.online-list {
+  display: flex;
+}
+
+.online-card {
+  position: relative;
+  padding: 16px 16px 13px 16px;
+
+  background-image: url(/img/online-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+.online-logo {
+  position: absolute;
+  top: 8px;
+  left: 188px;
+}
+
+.online-card-title {
+  padding-bottom: 2px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.online-card-spot {
+  padding-bottom: 48px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #ffffff40;
+}
+
+.online-card-spot-span {
+  font-weight: 400;
+}
+
+.online-card-income {
+  padding-bottom: 2px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff70;
+}
+
+.online-card-percent {
+  display: flex;
+  padding-bottom: 9px;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #35ff9e;
+}
+
+.online-card-percent-span {
+  font-size: 18px;
+}
+
+.online-card-goal-wrp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.online-card-goal {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #ffffff70;
+}
+
+.online-card-date {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #ffffff40;
+}
+
+.swiper-scrollbar {
+  max-width: 311px;
+  --swiper-scrollbar-border-radius: 56px;
+  --swiper-scrollbar-top: 224px;
+  transform: translateX(5%);
+  --swiper-scrollbar-bg-color: #434f7040;
+  --swiper-scrollbar-drag-bg-color: #6073a1;
+}
+
+@media screen and (min-width: 1440px) {
+  .online-section {
+    padding: 96px 0 148px 0;
+  }
+
+  .online-title {
+    padding-bottom: 4px;
+
+    font-size: 44px;
+    line-height: 1.27;
+  }
+
+  .online-text {
+    padding-bottom: 72px;
+  }
+
+  .swiper-scrollbar {
+    --swiper-scrollbar-top: 232px;
+    transform: translateX(15%);
+    max-width: 955px;
+  }
+}

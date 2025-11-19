@@ -1,0 +1,126 @@
+.hero-section {
+  padding: 40px 0 37px 0;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 33px;
+}
+
+.hero-title {
+  font-size: 35px;
+  line-height: 1.26;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+
+.hero-text {
+  line-height: 1.25;
+  color: #e7f7f880;
+  padding-bottom: 24px;
+}
+
+.hero-form {
+  background-color: #201a4f;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.hero-input {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 11px 12px;
+}
+
+.hero-input:placeholder-shown {
+  color: #ffffff34;
+}
+
+.hero-btn {
+  border: 1px solid var(--skyblue);
+  border-radius: 3px;
+  padding: 11px 24px;
+  box-shadow: 0 0 4px 0 var(--skyblue);
+  background-color: var(--skyblue);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.hero-phrase {
+  padding-top: 12px;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #ffffff30;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    padding: 160px 0 134px 0;
+  }
+
+  .hero-container {
+    flex-direction: row;
+    gap: 128px;
+  }
+
+  .hero-content {
+    order: -1;
+  }
+
+  .hero-title {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+
+  .hero-form {
+    width: 500px;
+    border-radius: 4px;
+  }
+
+  .hero-input {
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 16px 12px;
+  }
+
+  .hero-input:placeholder-shown {
+    color: #ffffff34;
+  }
+
+  .hero-btn {
+    border-radius: 4px;
+    padding: 16px 24px;
+    font-size: 16px;
+    line-height: 1.25;
+    transition: 200ms ease-in;
+  }
+
+  .hero-btn:hover,
+  .hero-btn:focus {
+    border: 1px solid var(--white);
+    box-shadow: 0 0 4px 0 var(--white);
+    background-color: var(--white);
+  }
+
+  .hero-img {
+    padding-right: 53px;
+  }
+}
